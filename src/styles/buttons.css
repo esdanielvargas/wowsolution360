@@ -1,0 +1,94 @@
+.app .button {
+  display: flex;
+  cursor: pointer;
+  padding: 0 16px;
+  background: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 4px;
+  align-items: center;
+  text-decoration: none;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  justify-content: center;
+  transition: var(--transition);
+  border: 1px solid transparent;
+}
+.app .button:focus-visible {
+  outline: none;
+}
+.app .icon-button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  padding: 0px !important;
+  color: var(--color-black);
+}
+.app .primary-button {
+  height: 34px;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  color: var(--color-black);
+  transition: var(--transition);
+  border-color: var(--color-black);
+  font: normal 12px var(--font-sans);
+}
+.app .primary-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+.app .action-button {
+  height: 34px;
+  letter-spacing: 0.4px;
+  color: var(--color-white);
+  text-transform: capitalize;
+  transition: var(--transition);
+  font: bold 12px var(--font-sans);
+  background-color: var(--color-black);
+}
+.app .action-button svg {
+  margin-right: 8px;
+}
+.app .border-button {
+  height: 34px;
+  letter-spacing: 0.4px;
+  color: var(--color-black);
+  text-transform: capitalize;
+  transition: var(--transition);
+  background-color: transparent;
+  border-color: var(--color-black);
+  font: bold 12px var(--font-sans);
+}
+.app .action-button.ghost {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+.app .action-button.ghost:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+.app .action-button.ghosting {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+.app .action-button.ghosting:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+.app .ghost-button {
+  height: 34px;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  color: var(--color-white);
+  background-color: transparent;
+  font: normal 12px var(--font-sans);
+  border: 1px solid var(--color-white);
+  transition: var(--transition);
+}
+.app .ghost-button:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}/*# sourceMappingURL=buttons.css.map */
