@@ -4,9 +4,9 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { Helmet } from "react-helmet";
-import ContactRow from "../common/ContactRow";
+import { ContactRow } from "../components";
 
-function Contact() {
+export default function Contact() {
   return (
     <>
       <Helmet>
@@ -17,7 +17,8 @@ function Contact() {
       <section className="section">
         <div className="container">
           <div className="head-title">
-            <h1>Contact</h1>
+            <h1 hidden>Wow Solution 360 Contact</h1>
+            <h2>Contact</h2>
           </div>
         </div>
       </section>
@@ -42,7 +43,6 @@ function Contact() {
               icon={faLocationDot}
               title="Address"
               text="10839 Harry Hines Blvd, Dallas, TX 75220, EE. UU."
-              // link="https://maps.app.goo.gl/vscTRzJYHrXmieSE7"
               link="https://maps.app.goo.gl/B2nEgAnsTDKuTdF36"
             />
             <iframe
@@ -62,4 +62,3 @@ function Contact() {
     </>
   );
 }
-export default Contact;

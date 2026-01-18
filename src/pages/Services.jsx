@@ -1,12 +1,8 @@
 import { Helmet } from "react-helmet";
-import { db } from "../firebase/config";
-import { useServices } from "../firebase/fbQueries";
-import ServicesItemLoad from "../common/ServicesItemLoad";
-import ServicesItem from "../common/ServicesItem";
+import { ServiceCard, ServiceCardLoad } from "../components";
+import services from "../data/services.json";
 
 function Services() {
-  const services = useServices(db);
-
   return (
     <>
       <Helmet>
@@ -17,7 +13,8 @@ function Services() {
       <section className="section">
         <div className="container">
           <div className="head-title">
-            <h1>Services</h1>
+            <h1 hidden>Wow Solution 360 Services</h1>
+            <span className="title">Services</span>
           </div>
         </div>
       </section>
@@ -25,23 +22,16 @@ function Services() {
       <section className="section">
         <div className="container">
           <div className="column">
-            {services.length === 0 ? (
+            {services?.length === 0 ? (
               <>
-                <ServicesItemLoad />
-                <ServicesItemLoad />
-                <ServicesItemLoad />
-                <ServicesItemLoad />
+                <ServiceCardLoad />
+                <ServiceCardLoad />
+                <ServiceCardLoad />
+                <ServiceCardLoad />
               </>
             ) : (
               services.map((service) => (
-                <ServicesItem
-                  key={service.id}
-                  title={service.title}
-                  image={service.image}
-                  desc={service.desc}
-                  path={service.path}
-                  show_service={service.show_service}
-                />
+                <ServiceCard key={service?.id} {...service} />
               ))
             )}
           </div>

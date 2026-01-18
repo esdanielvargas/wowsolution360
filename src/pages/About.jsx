@@ -11,7 +11,8 @@ function About() {
       <section className="section">
         <div className="container">
           <div className="head-title">
-            <h1>About</h1>
+            <h1 hidden>Wow Solution 360 About</h1>
+            <h2>About</h2>
           </div>
         </div>
       </section>
@@ -25,41 +26,50 @@ function About() {
           <div className="row">
             <div className="feed">
               <p>
-                <b>Our History</b>
-                <br />
+                <h3>
+                  <b>Our History</b>
+                </h3>
                 <span>
                   Founded in 2010, our company has been serving the Irving,
-                  Texas for over {new Date().getFullYear() - 2010} years. We started as a small family business
-                  and have grown to become a leader in the glass installation
-                  and repair industry.
+                  Texas for over {new Date().getFullYear() - 2010} years. We
+                  started as a small family business and have grown to become a
+                  leader in the glass installation and repair industry.
                 </span>
               </p>
               <p>
-                <b>Our Mission</b>
-                <br /> Our mission is to provide the highest quality glass
-                installation and repair services to our customers. We strive to
-                deliver exceptional service, from the initial consultation to
-                the completion of the project.
+                <h3>
+                  <b>Our Mission</b>
+                </h3>
+                Our mission is to provide the highest quality glass installation
+                and repair services to our customers. We strive to deliver
+                exceptional service, from the initial consultation to the
+                completion of the project.
               </p>
               <p>
-                <b>Our Team</b>
-                <br /> Our team consists of highly trained and dedicated
-                professionals who take pride in their work. Each member of our
-                team is committed to customer satisfaction and strives to exceed
-                their expectations on every project.
+                <h3>
+                  <b>Our Team</b>
+                </h3>
+                Our team consists of highly trained and dedicated professionals
+                who take pride in their work. Each member of our team is
+                committed to customer satisfaction and strives to exceed their
+                expectations on every project.
               </p>
               <p>
-                <b>Our Values</b>
-                <br /> We believe in honesty, integrity, and hard work. These
-                values form the foundation of everything we do and help us
-                ensure that every customer receives the best possible service.
+                <h3>
+                  <b>Our Values</b>
+                </h3>
+                We believe in honesty, integrity, and hard work. These values
+                form the foundation of everything we do and help us ensure that
+                every customer receives the best possible service.
               </p>
               <p>
-                <b>Our Commitment</b>
-                <br /> We are committed to excellence in all aspects of our
-                business. From material selection to project completion, we
-                strive to ensure that every customer is completely satisfied
-                with our work.
+                <h3>
+                  <b>Our Commitment</b>
+                </h3>
+                We are committed to excellence in all aspects of our business.
+                From material selection to project completion, we strive to
+                ensure that every customer is completely satisfied with our
+                work.
               </p>
             </div>
             <div className="brand">
@@ -67,7 +77,7 @@ function About() {
                 src="/images/profile.jpg"
                 alt="Photography of profile"
                 title="Photography of profile"
-                loading="lazy"
+                loading="eager"
                 width={480}
                 height={480}
               />

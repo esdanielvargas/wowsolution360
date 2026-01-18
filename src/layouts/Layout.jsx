@@ -1,14 +1,8 @@
+import { Footer, Glass, Header, Main, Menu, ScrollToTop } from "../components";
 import { useEffect, useState } from "react";
-import ScrollToTop from "../common/ScrollToTop";
-import Header from "../common/Header";
-import Menu from "../common/Menu";
-import Main from "../common/Main";
-import Glass from "../common/Glass";
-import Footer from "../common/Footer";
 
-function Layout() {
+export default function Layout() {
   const [menu, setMenu] = useState(false);
-  const [login, setLogin] = useState(false);
 
   const handleMenu = () => {
     setMenu(!menu);
@@ -32,7 +26,6 @@ function Layout() {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.code === "F2") {
-        setLogin(!login);
         setGlass(!glass);
       }
     };
@@ -62,4 +55,3 @@ function Layout() {
     </>
   );
 }
-export default Layout;

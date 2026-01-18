@@ -1,5 +1,4 @@
 @import url(./global.css);
-@import url(./content.css);
 @import url(./global.css);
 @import url(./buttons.css);
 .app {
@@ -211,7 +210,8 @@
   border-bottom: 1px solid var(--border-color);
 }
 .app .main .section .container .head-title h1,
-.app .main .section .container .head-title h2 {
+.app .main .section .container .head-title h2,
+.app .main .section .container .head-title .title {
   width: 100%;
   text-align: center;
   text-shadow: 2px 2px 2px grey;
@@ -295,6 +295,11 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+.app .main .section .container .feed h1,
+.app .main .section .container .feed h2,
+.app .main .section .container .feed h3 {
+  margin: 0 !important;
 }
 .app .main .section .container .feed p {
   font: normal 12px/1.75 var(--font-sans);
@@ -562,8 +567,9 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.app .service-row .service-row-data h2 {
-  margin: 0;
+.app .service-row .service-row-data h2,
+.app .service-row .service-row-data h3 {
+  margin: 0 !important;
   width: 100%;
   text-wrap: balance;
   font: bold 26px var(--font-sans);
@@ -747,383 +753,6 @@
 .app .no-found a {
   box-shadow: 2px 2px 10px var(--color-black);
 }
-.app .login,
-.app .register {
-  gap: 16px;
-  inset: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 100;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  transition: var(--transition);
-}
-.app .login .logo,
-.app .login .logotype,
-.app .register .logo,
-.app .register .logotype {
-  top: 20px;
-  width: 240px;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-}
-.app .login .logo img,
-.app .login .logotype img,
-.app .register .logo img,
-.app .register .logotype img {
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-.app .login form,
-.app .login .box,
-.app .register form,
-.app .register .box {
-  gap: 8px;
-  width: 300px;
-  display: flex;
-  padding: 16px;
-  align-items: center;
-  border-radius: 12px;
-  flex-direction: column;
-  box-shadow: var(--elevated);
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
-}
-.app .login form label,
-.app .login .box label,
-.app .register form label,
-.app .register .box label {
-  text-align: center;
-  font: bold 20px var(--font-sans);
-}
-.app .login form .input,
-.app .login form .name,
-.app .login form .email,
-.app .login form .password,
-.app .login .box .input,
-.app .login .box .name,
-.app .login .box .email,
-.app .login .box .password,
-.app .register form .input,
-.app .register form .name,
-.app .register form .email,
-.app .register form .password,
-.app .register .box .input,
-.app .register .box .name,
-.app .register .box .email,
-.app .register .box .password {
-  width: calc(100% - 20px);
-  height: 30px;
-  text-indent: 14px;
-  border-radius: 4px;
-  font: normal 12.5px var(--font-sans);
-  border: 1px solid var(--border-color);
-  background-color: var(--footer-color);
-}
-.app .login form .input:focus-visible,
-.app .login form .name:focus-visible,
-.app .login form .email:focus-visible,
-.app .login form .password:focus-visible,
-.app .login .box .input:focus-visible,
-.app .login .box .name:focus-visible,
-.app .login .box .email:focus-visible,
-.app .login .box .password:focus-visible,
-.app .register form .input:focus-visible,
-.app .register form .name:focus-visible,
-.app .register form .email:focus-visible,
-.app .register form .password:focus-visible,
-.app .register .box .input:focus-visible,
-.app .register .box .name:focus-visible,
-.app .register .box .email:focus-visible,
-.app .register .box .password:focus-visible {
-  outline: none;
-}
-.app .login form .button,
-.app .login .box .button,
-.app .register form .button,
-.app .register .box .button {
-  padding: 0;
-  width: calc(100% - 16px);
-}
-.app .login form a,
-.app .login .box a,
-.app .register form a,
-.app .register .box a {
-  color: var(--primary-color);
-}
-.app .login form code,
-.app .login .box code,
-.app .register form code,
-.app .register .box code {
-  margin: 0 2px;
-  padding: 0 3px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: var(--footer-color);
-}
-.app .dashboard {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  position: relative;
-}
-.app .dashboard .dashboard-menu {
-  z-index: 2;
-  width: 279px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--footer-color);
-  border-right: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-menu .block-user {
-  gap: 6px;
-  width: 100%;
-  display: flex;
-  padding: 20px 0;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  border-bottom: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-menu .block-user .user-card {
-  gap: 10px;
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  max-width: calc(100% - 32px);
-  margin-left: -20px;
-}
-.app .dashboard .dashboard-menu .block-user .user-card .user-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app .dashboard .dashboard-menu .block-user .user-card .user-avatar img {
-  width: 43px;
-  height: 43px;
-  max-width: 43px;
-  max-height: 43px;
-  overflow: hidden;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  border-radius: 50%;
-  pointer-events: none;
-  border: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-menu .block-user .user-card .user-details {
-  width: calc(100% - 55px);
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-.app .dashboard .dashboard-menu .block-user .user-card .user-details .user-name {
-  cursor: default;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font: bold 16px var(--font-sans);
-}
-.app .dashboard .dashboard-menu .block-user .user-card .user-details .user-email {
-  cursor: default;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font: normal 12px var(--font-sans);
-}
-.app .dashboard .dashboard-menu ul {
-  margin: 0;
-  padding: 16px 0;
-  list-style: none;
-}
-.app .dashboard .dashboard-menu ul li {
-  padding: 0 16px;
-}
-.app .dashboard .dashboard-menu ul li .item-list {
-  width: 100%;
-  height: 48px;
-  display: flex;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  border-radius: 12px;
-  align-items: center;
-  text-decoration: none;
-  justify-content: center;
-  color: var(--color-black);
-  transition: var(--transition);
-  font: normal 16px var(--font-sans);
-  border: 1px solid transparent;
-}
-.app .dashboard .dashboard-menu ul li .item-list .wrapper {
-  gap: 12px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  width: calc(100% - 32px);
-}
-.app .dashboard .dashboard-menu ul li .item-list.active {
-  background-color: #e8e8e8;
-  border-color: var(--border-color);
-}
-.app .dashboard .dashboard-menu ul li .item-list.log-out {
-  background-color: #e8e8e8;
-  border-color: var(--border-color);
-}
-.app .dashboard .dashboard-menu ul li .item-list.log-out:hover {
-  color: red;
-}
-.app .dashboard .dashboard-menu ul li .action-button {
-  color: var(--color-white);
-}
-.app .dashboard .dashboard-content {
-  right: 0;
-  z-index: 1;
-  height: 100vh;
-  position: absolute;
-  width: calc(100% - 280px);
-  background-color: var(--background-color);
-}
-.app .dashboard .dashboard-content .page {
-  gap: 16px;
-  margin: 16px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: calc(100% - 32px);
-  height: calc(100% - 32px);
-  justify-content: flex-start;
-}
-.app .dashboard .dashboard-content .page .page-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.app .dashboard .dashboard-content .page .page-header .icon-button {
-  width: 34px;
-  height: 34px;
-  display: flex;
-  cursor: pointer;
-  border-radius: 8px;
-  align-items: center;
-  justify-content: center;
-  background: var(--footer-color);
-  border: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-content .page .page-header .icon-button.hidden {
-  cursor: default;
-  visibility: hidden;
-  pointer-events: none;
-  border-color: transparent;
-  background-color: transparent;
-}
-.app .dashboard .dashboard-content .page .page-header .title {
-  font: bold 18px var(--font-sans);
-}
-.app .dashboard .dashboard-content .page .page-content {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.app .dashboard .dashboard-content .page .page-content .form-box {
-  gap: 8px;
-  width: 380px;
-  display: flex;
-  padding: 16px;
-  align-items: center;
-  border-radius: 12px;
-  flex-direction: column;
-  border: 1px solid var(--border-color);
-  background-color: var(--footer-color);
-}
-.app .dashboard .dashboard-content .page .page-content .form-box .block {
-  gap: 8px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.app .dashboard .dashboard-content .page .page-content .form-box label {
-  width: 100%;
-  margin-top: -8px;
-  text-align: center;
-  font: bold 16px var(--font-sans);
-}
-.app .dashboard .dashboard-content .page .page-content .form-box .name,
-.app .dashboard .dashboard-content .page .page-content .form-box .email,
-.app .dashboard .dashboard-content .page .page-content .form-box .password {
-  height: 38px;
-  padding: 0 10px;
-  border-radius: 4px;
-  width: calc(100% - 21px);
-  color: var(--color-black);
-  font: normal 13.5px var(--font-sans);
-  border: 1px solid var(--border-color);
-  background-color: var(--background-color);
-}
-.app .dashboard .dashboard-content .page .page-content .form-box .name:disabled,
-.app .dashboard .dashboard-content .page .page-content .form-box .email:disabled,
-.app .dashboard .dashboard-content .page .page-content .form-box .password:disabled {
-  cursor: no-drop;
-  color: rgb(125, 125, 125) !important;
-}
-.app .dashboard .dashboard-content .page .page-content .form-box .name:focus-visible,
-.app .dashboard .dashboard-content .page .page-content .form-box .email:focus-visible,
-.app .dashboard .dashboard-content .page .page-content .form-box .password:focus-visible {
-  outline: none;
-}
-.app .dashboard .dashboard-content .page .page-content .form-box span {
-  text-align: center;
-  font: normal 11.5px var(--font-sans);
-}
-.app .dashboard .dashboard-content .page .page-content .form-box .button {
-  width: 100%;
-  margin-top: 4px;
-}
-.app .dashboard .dashboard-content .page .page-content .table {
-  width: 100%;
-  border: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-content .page .page-content .table tr th {
-  padding: 4px 0;
-  text-align: left;
-  text-indent: 12px;
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-content .page .page-content .table tr th:last-child {
-  border-right: none;
-}
-.app .dashboard .dashboard-content .page .page-content .table tr td {
-  padding: 4px 0;
-  text-indent: 12px;
-  border-right: 1px solid var(--border-color);
-  border-bottom: 1px solid var(--border-color);
-}
-.app .dashboard .dashboard-content .page .page-content .table tr td:last-child {
-  border-right: none;
-}
-.app .dashboard .dashboard-content .page .page-content .table tr:last-child td {
-  border-bottom: none;
-}
 
 @media screen and (max-width: 64em) {
   .header .container .flex .nav-menu {
@@ -1162,7 +791,8 @@
   .service-row .service-row-data {
     gap: 18px !important;
   }
-  .service-row .service-row-data h2 {
+  .service-row .service-row-data h2,
+  .service-row .service-row-data h3 {
     font-size: 18px !important;
   }
   .service-row .service-row-data p {
@@ -1253,7 +883,8 @@
     margin-left: 0 !important;
     align-items: center !important;
   }
-  .service-row .service-row-data h2 {
+  .service-row .service-row-data h2,
+  .service-row .service-row-data h3 {
     text-align: center;
     margin-top: 14px !important;
   }
