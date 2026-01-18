@@ -1,0 +1,26 @@
+[
+    {
+        "id": "zAT0zAWo7cQ0wd",
+        "image": "/images/tempered-glass.png",
+        "title": "Tempered Glass",
+        "caption": "High impact resistance."
+    },
+    {
+        "id": "JcewgI1yjLrscO",
+        "image": "/images/laminated-glass.png",
+        "title": "Laminated Glass",
+        "caption": "Enhances safety, soundprooft."
+    },
+    {
+        "id": "iOYsptQaD0ZTtH",
+        "image": "/images/insulated-glass.png",
+        "title": "Insulated Glass",
+        "caption": "Energy efficient, noice reduction."
+    },
+    {
+        "id": "JJ6x6cxJKa3xFk",
+        "image": "/images/low-e-glass.png",
+        "title": "Low-E Glass",
+        "caption": "Reflects thermal radiation."
+    }
+]

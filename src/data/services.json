@@ -1,0 +1,30 @@
+[
+  {
+    "id": "auto-glass",
+    "image": "/images/auto-glass.png",
+    "title": "Automobile Glass Installation and Repair Services",
+    "caption": "Whether you need a windshield repair or a new side window, our automobile glass experts are ready to assist you. We offer quick and high-quality services to keep your vehicle safe and in good condition.",
+    "path": "automobile-glass"
+  },
+  {
+    "id": "business-glass",
+    "image": "/images/storefront.png",
+    "title": "Business Glass Installation and Repair Services",
+    "caption": "We offer glass installation and repair services for your business. Whether you need a new storefront or an emergency repair, our team of experts is ready to assist you.",
+    "path": "business-glass"
+  },
+  {
+    "id": "house-glass",
+    "image": "/images/window.png",
+    "title": "Home Window Installation and Repair Services",
+    "caption": "Enhance your home’s view and energy efficiency with our window installation and repair services. We offer a variety of styles and options to suit any home.",
+    "path": "home-window"
+  },
+  {
+    "id": "shower-glass",
+    "image": "/images/shower-glass.png",
+    "title": "Shower Glass Installation and Repair Services",
+    "caption": "Transform your bathroom with our shower glass installation and repair services. We offer a variety of designs and finishes to create the shower of your dreams.",
+    "path": "shower-glass"
+  }
+]
