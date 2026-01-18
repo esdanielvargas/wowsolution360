@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Socials() {
+export default function Socials() {
   return (
     <div className="footer-socials">
       <ul className="social-list">
@@ -58,4 +58,3 @@ function Socials() {
     </div>
   );
 }
-export default Socials;

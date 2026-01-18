@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import NavMenu from "./NavMenu";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import NavMenu from "./NavMenu";
 
-function Menu(props) {
+export default function Menu(props) {
   return (
     <div className={!props.menu ? "menu" : "menu show"}>
       {props.menu && (
@@ -25,4 +25,3 @@ function Menu(props) {
     </div>
   );
 }
-export default Menu;

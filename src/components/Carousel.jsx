@@ -6,19 +6,22 @@ import {
   faPause,
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
-import img1Desktop from "../images/carousel-desktop/storefront-desktop.png";
-import img2Desktop from "../images/carousel-desktop/windows-desktop.png";
-import img3Desktop from "../images/carousel-desktop/shower-door-desktop.png";
-import img4Desktop from "../images/carousel-desktop/autoglass-desktop.png";
 
-import img1Mobile from "../images/carousel-mobile/storefront-mobile.png";
-import img2Mobile from "../images/carousel-mobile/windows-mobile.png";
-import img3Mobile from "../images/carousel-mobile/shower-door-mobile.png";
-import img4Mobile from "../images/carousel-mobile/auto-glass-mobile.png";
+export default function Carousel() {
+  const imagesDesktop = [
+    "/images/carousel-desktop/storefront-desktop.png",
+    "/images/carousel-desktop/windows-desktop.png",
+    "/images/carousel-desktop/shower-door-desktop.png",
+    "/images/carousel-desktop/autoglass-desktop.png",
+  ];
 
-function Carousel() {
-  const imagesDesktop = [img1Desktop, img2Desktop, img3Desktop, img4Desktop];
-  const imagesMobile = [img1Mobile, img2Mobile, img3Mobile, img4Mobile];
+  const imagesMobile = [
+    "/images/carousel-mobile/storefront-mobile.png",
+    "/images/carousel-mobile/windows-mobile.png",
+    "/images/carousel-mobile/shower-door-mobile.png",
+    "/images/carousel-mobile/auto-glass-mobile.png",
+  ];
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPause, setIsPause] = useState(false);
 
@@ -104,4 +107,3 @@ function Carousel() {
     </section>
   );
 }
-export default Carousel;

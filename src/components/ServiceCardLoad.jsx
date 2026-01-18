@@ -1,4 +1,4 @@
-function ServicesItemLoad() {
+export default function ServiceCardLoad() {
   return (
     <div className="service-row-load">
       <div className="service-row-image-load"></div>
@@ -17,4 +17,3 @@ function ServicesItemLoad() {
     </div>
   );
 }
-export default ServicesItemLoad;

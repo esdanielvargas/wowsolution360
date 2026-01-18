@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Logo() {
+export default function Logo() {
   return (
     <Link to="/" rel="home" className="logo">
       <span hidden>WOW SOLUTION 360</span>
@@ -15,4 +15,3 @@ function Logo() {
     </Link>
   );
 }
-export default Logo;

@@ -1,10 +1,9 @@
 import { Outlet } from "react-router-dom";
 
-function Main() {
+export default function Main() {
   return (
     <main className="main">
       <Outlet />
     </main>
   );
 }
-export default Main;

@@ -1,7 +1,7 @@
 import { faBars, faClose, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function ActionButtons(props) {
+export default function ActionButtons(props) {
   return (
     <>
       <a
@@ -27,4 +27,3 @@ function ActionButtons(props) {
     </>
   );
 }
-export default ActionButtons;

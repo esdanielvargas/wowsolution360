@@ -2,7 +2,7 @@ import Logo from "./Logo";
 import NavMenu from "./NavMenu";
 import ActionButtons from "./ActionButtons";
 
-function Header(props) {
+export default function Header(props) {
   return (
     <header className="header">
       <div className="container">
@@ -17,4 +17,3 @@ function Header(props) {
     </header>
   );
 }
-export default Header;

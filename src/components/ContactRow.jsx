@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function ContactRow(props) {
+export default function ContactRow(props) {
   return (
     <div className="contact-row">
       <div className="contact-row-icon">
@@ -22,4 +22,3 @@ function ContactRow(props) {
     </div>
   );
 }
-export default ContactRow;

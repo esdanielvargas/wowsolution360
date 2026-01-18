@@ -2,7 +2,7 @@ import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-function NavMenu(props) {
+export default function NavMenu(props) {
   return (
     <nav className="nav-menu">
       <ul className="nav-list">
@@ -73,4 +73,3 @@ function NavMenu(props) {
     </nav>
   );
 }
-export default NavMenu;

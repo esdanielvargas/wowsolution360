@@ -1,7 +1,7 @@
 import Copyright from "./Copyright";
 import Socials from "./Socials";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer className="footer">
         <div className="container">
@@ -12,4 +12,3 @@ function Footer() {
     </footer>
   )
 }
-export default Footer;
